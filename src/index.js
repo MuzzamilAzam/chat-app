@@ -7,7 +7,7 @@ const socketio = require('socket.io')
 const Filter = require('bad-words')
 
 const publicDirectoryPath = path.join(__dirname, '../public')
-const port = 3000 || process.env.PORT
+const port = process.env.PORT
 
 const app = express()
 const server = http.createServer(app)
